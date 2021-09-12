@@ -17,7 +17,7 @@ class Post(models.Model):
     content = models.TextField() # markdown
     thumbnail = models.ImageField(upload_to=upload_post_image)
 
-    def __string__(self):
+    def __str__(self):
         return self.title
 
 def pre_save_receiver(sender, instance, **kwargs):
